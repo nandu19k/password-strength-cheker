@@ -28,6 +28,5 @@ def thank_you():
     return render_template('mian.html', y_pred=y_pred)
     
 
-if __name__=='__main__':
     app.run(debug=True)
     
