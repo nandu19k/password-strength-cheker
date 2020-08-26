@@ -27,6 +27,7 @@ def thank_you():
     y_pred = model.predict(x_predict)
     return render_template('mian.html', y_pred=y_pred)
     
-
-    app.run(debug=True)
+    
+    
+app.run(debug=True)
     
