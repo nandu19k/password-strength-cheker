@@ -21,7 +21,7 @@ def home():
 
 @app.route('/check/' , methods=['GET' , 'POST'])
 def thank_you():
-    enteredPassword = request.args.get('password')
+    enteredPassword = request.form['password']
     x_predict = np.array([enteredPassword])
     x_predict = vector.transform(x_predict)
     y_pred = model.predict(x_predict)
